@@ -52,6 +52,9 @@ public:
 
     // Start of the turn
     void turnStart(); 
+	
+    //add one magic to the player
+    void gainMP(); 
 
     // get my board: currently played cards
 	vector<Card*> getMyBoard();
