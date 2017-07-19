@@ -1,8 +1,10 @@
+
 #include <vector>
 #include <string>
+#include "Player.h"
 
 class Card { // abstract class
-	
+
 	string name;
 	int cost;
 	string description;
@@ -10,9 +12,9 @@ class Card { // abstract class
 
 public:
 
-	virtual ~Expr();
+	virtual ~Card();
 	enum cardType {Minion = 0, Spell, Enchantment, Ritual}
-	cardType getType();	 
+	virtual cardType getType()=0;
 
 };
 
