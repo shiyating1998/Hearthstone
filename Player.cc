@@ -57,5 +57,8 @@ void Player::discardCard(int i) {
 	hand.erase(i);
 }
 
+void gainMP() {
+    ++MP;
+}
 
 
